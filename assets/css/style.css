@@ -62,12 +62,10 @@ header h1 {
   list-style-type: none;
   text-decoration: none;
   color: black;
+  font-size: 1rem;
 }
 .under-side nav ul li a:hover {
   font-weight: 600;
-}
-.language-select {
-  padding: 20px;
 }
 
 .search-container {
@@ -99,8 +97,7 @@ header h1 {
 main {
   display: flex;
   gap: 10px;
-  margin-top: 5vh;
-  margin-bottom: 10vh;
+  margin: 5vh 0;
   font-size: 1rem;
   background-color: #e9e9e9;
   padding: 0 5px 0 0;
@@ -123,13 +120,13 @@ main {
   margin-bottom: 6vh;
 }
 .descImage {
-  width: 30vw;
+  width: 35vw;
 }
 
 .description-container {
-  padding: 10px 0;
+  padding: 20px 0;
   width: 30vw;
-  margin-left: 5vw;
+  margin-left: 3vw;
 }
 .title {
   margin-bottom: 3vh;
