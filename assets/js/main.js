@@ -1,5 +1,15 @@
+const searchInput = document.querySelector(".searchInput");
+const searchInputButton = document.querySelector(".searchInputButton");
+
+const searchButton = () => {
+  const lupeIconButton = (document.querySelector(
+    ".lupeIconButton"
+  ).style.visibility = "hidden");
+  searchInput.style.display = "block";
+  searchInputButton.style.display = "block";
+};
+
 const searchNews = () => {
-  const searchInput = document.querySelector(".searchInput");
   fetch(
     `https://newsapi.org/v2/everything?q=${searchInput.value}&from=2023-04-02&to=2023-04-02&sortBy=popularity&apiKey=64b826567a8a457380cca1f368675e5c`
   )

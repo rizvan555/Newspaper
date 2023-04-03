@@ -15,12 +15,12 @@
 
   <body>
     <header>
-      <div class="up-container">
+      <div class="up-side-container">
         <div class="logo">The<br />News</div>
         <h1>The News</h1>
       </div>
 
-      <div class="under-side">
+      <div class="down-side-container">
         <nav>
           <ul>
             <li><a href="#">World News</a></li>
@@ -33,14 +33,19 @@
           </ul>
         </nav>
         <div class="search-container">
-          <input type="text" placeholder="Search" class="searchInput" />
-          <button onclick="searchNews()">Search</button>
-          <img
-            src="./assets/resource/icons/user (1).png"
-            alt="registerIcon"
-            class="registerIcon"
-          />
+          <button onclick="searchButton()" class="lupeIconButton">
+            <img
+              src="./assets/resource/icons/lupe.png"
+              alt="lupeIcon"
+              class="lupeIcon"
+            />
+          </button>
         </div>
+        <img
+          src="./assets/resource/icons/user (1).png"
+          alt="registerIcon"
+          class="registerIcon"
+        />
         <div class="language-selection">
           <label for="language-select"></label>
           <select id="language-select">
@@ -48,6 +53,11 @@
             <option value="de">Deutsch</option>
           </select>
         </div>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search" class="searchInput" />
+        <button onclick="searchNews()" class="searchInputButton">Search</button>
       </div>
     </header>
 

@@ -15,7 +15,7 @@ header {
   font-size: 1.2rem;
   padding: 20px;
 }
-.up-container {
+.up-side-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,54 +46,87 @@ header h1 {
   width: 30px;
   margin-left: 20px;
 }
-.under-side {
+.down-side-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 20px;
+  margin-bottom: 10vh;
 }
-.under-side nav ul {
+.down-side-container nav ul {
   display: flex;
   text-decoration: none;
-  gap: 3vw;
+  gap: 4vw;
 }
-.under-side nav ul li,
-.under-side nav ul li a {
+.down-side-container nav ul li,
+.down-side-container nav ul li a {
   list-style-type: none;
   text-decoration: none;
   color: black;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
-.under-side nav ul li a:hover {
+.down-side-container nav ul li a:hover {
   font-weight: 600;
 }
 
 .search-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
-.search-container input {
-  width: 20vw;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
 }
-.search-container button {
-  width: 5vw;
-  padding: 8px;
+.searchInput {
+  display: none;
+  width: 60vw;
+  padding: 20px;
+  border: 1px solid #e3e3e3;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+.searchInput::placeholder {
+  font-size: 1.2rem;
+}
+.lupeIconButton {
+  border: 1px solid #e2e2e2;
+}
+.lupeIcon {
+  width: 20px;
+  cursor: pointer;
+}
+.searchInputButton {
+  display: none;
+  width: 15vw;
+  padding: 20px;
   border-radius: 5px;
   border: none;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: #e3e3e3;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
-.search-container button:hover {
+.searchInputButton:hover {
   color: white;
   font-weight: 600;
   background-color: red;
 }
+.lupeIconButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
 main {
   display: flex;
   gap: 10px;
