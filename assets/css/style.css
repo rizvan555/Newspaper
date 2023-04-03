@@ -42,20 +42,29 @@ header h1 {
   letter-spacing: 1px;
   margin: 0 auto 5vh auto;
 }
+.register-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e3e3;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 .registerIcon {
-  width: 30px;
+  width: 25px;
 }
 .down-side-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0 20px;
-  /* margin-bottom: 10vh; */
+  padding: 0 10px;
 }
 .down-side-container nav ul {
   display: flex;
   text-decoration: none;
-  gap: 4vw;
+  gap: 3vw;
 }
 .down-side-container nav ul li,
 .down-side-container nav ul li a {
@@ -98,7 +107,7 @@ header h1 {
   border: 1px solid #e2e2e2;
 }
 .lupeIcon {
-  width: 20px;
+  width: 25px;
   cursor: pointer;
 }
 .searchInputButton {
@@ -125,11 +134,21 @@ header h1 {
   height: 50px;
   border-radius: 50px;
 }
+.language-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
 
 main {
   display: flex;
   gap: 10px;
-  margin: 5vh 0;
+  margin: 0 0 5vh 0;
   font-size: 1rem;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 0 5px 0 0;
