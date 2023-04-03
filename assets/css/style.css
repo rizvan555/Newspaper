@@ -44,14 +44,13 @@ header h1 {
 }
 .registerIcon {
   width: 30px;
-  margin-left: 20px;
 }
 .down-side-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 0 20px;
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
 }
 .down-side-container nav ul {
   display: flex;
@@ -72,10 +71,10 @@ header h1 {
 
 .search-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 2vw;
+  margin-left: 10vw;
 }
 .search-box {
   display: flex;
@@ -132,16 +131,15 @@ main {
   gap: 10px;
   margin: 5vh 0;
   font-size: 1rem;
-  background-color: #e9e9e9;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 0 5px 0 0;
 }
 .content-container {
   display: flex;
   gap: 10px;
-  width: 60vw;
+  width: 70vw;
   padding: 20px;
-  border-radius: 5px;
-  background-color: #e3e3e3;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .content-container article {
   display: flex;
@@ -149,24 +147,31 @@ main {
 }
 .source-name {
   padding-top: 5vh;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 6vh;
 }
+.content {
+  font-size: 1.3rem;
+}
 .descImage {
-  width: 35vw;
+  width: 40vw;
 }
 
 .description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px 0;
   width: 30vw;
   margin-left: 3vw;
 }
 .title {
   margin-bottom: 3vh;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .description {
   margin-bottom: 12vh;
+  font-size: 0.8rem;
 }
 .author {
   margin-bottom: 2vh;

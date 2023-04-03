@@ -1,5 +1,6 @@
 const searchInput = document.querySelector(".searchInput");
 const searchInputButton = document.querySelector(".searchInputButton");
+const downSideContainer = document.querySelector(".down-side-container");
 
 const searchButton = () => {
   const lupeIconButton = (document.querySelector(
@@ -7,6 +8,8 @@ const searchButton = () => {
   ).style.visibility = "hidden");
   searchInput.style.display = "block";
   searchInputButton.style.display = "block";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.3)";
+  downSideContainer.style.marginBottom = "10vh";
 };
 
 const searchNews = () => {
@@ -16,6 +19,7 @@ const searchNews = () => {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
+      document.body.style.backgroundColor = "white";
       const sourceName = (document.querySelector(
         ".source-name"
       ).textContent = `${data.articles[99].source.name}`);
