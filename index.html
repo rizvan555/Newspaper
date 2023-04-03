@@ -15,7 +15,11 @@
 
   <body>
     <header>
-      <h1>The News</h1>
+      <div class="up-container">
+        <div class="logo">The<br />News</div>
+        <h1>The News</h1>
+      </div>
+
       <div class="under-side">
         <nav>
           <ul>
@@ -25,12 +29,24 @@
             <li><a href="#">Business</a></li>
             <li><a href="#">Technologie</a></li>
             <li><a href="#">Health</a></li>
+            <li><a href="#">Entertainment</a></li>
           </ul>
         </nav>
         <div class="search-container">
           <input type="text" placeholder="Search" class="searchInput" />
-          <button onclick="searchNews()">Enter</button>
-          <img src="" alt="registerIcon" />
+          <button onclick="searchNews()">Search</button>
+          <img
+            src="./assets/resource/icons/user (1).png"
+            alt="registerIcon"
+            class="registerIcon"
+          />
+        </div>
+        <div class="language-selection">
+          <label for="language-select"></label>
+          <select id="language-select">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+          </select>
         </div>
       </div>
     </header>
